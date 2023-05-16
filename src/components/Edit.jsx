@@ -13,7 +13,7 @@ function Edit() {
 
     let history = useNavigate()
 
-    let index = Employees.map(function(e){
+    var index = Employees.map(function(e){
         return e.id
     }).indexOf(id)
 
@@ -35,7 +35,7 @@ function Edit() {
   return (
     <div>
         <Form style={{margin:"15rem"}}>
-            <Form.Group>
+            <Form.Group controlId='formName'>
                 <Form.Control type="text" placeholder="Enter Your Name" value={name} required onChange={(e) =>setName(e.target.value)}>
                 </Form.Control>
             </Form.Group>

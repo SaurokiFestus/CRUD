@@ -60,6 +60,12 @@ function Home(){
                                             
                                             &nbsp;
                                             <Button onClick={() => handleDelete(item.id)}> Delete</Button>
+
+                                            &nbsp;
+                                            <Link to="/report">
+                                            <Button > Go to report</Button>
+                                            </Link>
+                                            
                                         </td>
                                     </tr>
                                 )
